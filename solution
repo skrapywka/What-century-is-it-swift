@@ -4,9 +4,9 @@ func whatCentury(_ year: String) -> String {
      var ordNum: String = ""
 
       switch century % 10 {
-      case 1 where century % 100 != 11: ordNum += "st"
-      case 2 where century % 100 != 12: ordNum += "nd"
-      case 3 where century % 100 != 13: ordNum += "rd"
+      case 1: ordNum += "st"
+      case 2: ordNum += "nd"
+      case 3: ordNum += "rd"
       default: ordNum += "th"
         }
         return "\(century)\(ordNum)"
